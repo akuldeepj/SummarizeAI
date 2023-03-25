@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1 id="contact">Let's Build Something </h1>
+      <h2 id="sub">Great Together</h2>
+
+      <button type="button" id="back" onclick="location.href='{{ url_for('index') }}'">Return to Home</button>
+      <!-- <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+        
+
+        <button type="submit">Send</button> 
+
+
+      </form>-->
+
+      <div class="card-container">
+        <div class="card contact-card">
+          <p id="con">Contact:</p>
+          <p id="con">✉️akuldeepj@gmail.com</p>
+        </div>
+        <a class="card text-card" href="{{ url_for('suggestions') }}">
+          <p>Drop A SUGGESTION HERE !!!<br>
+                      OR
+            <br>
+            Report A BUG
+          </p>
+
+        </a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    
+
+
+  </head>
+  <body>
+
+    <nav>
+      <ul>
+        <li><a href="#"><img src="../static/image.png" width="70px"></a></li>
+        <li><a href="#input">Summarizer</a></li>
+        <!-- <li><a href="#">Services</a></li> -->
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        <!-- <li><a href="contact.html ">Contact</a></li> -->
+
+      </ul>
+    </nav>
+<!--     
+      <div class="image" id="pic">
+        <img src="/tutorial1/image.png" alt="ai pic">
+      </div> -->
+
+    <div class="container" id="container">
+      <h1 id="home">The Text Summarizer</h1>
+      <p>Get the gist of any text in seconds with powerful summarization tool</p> 
+      <!-- <div class="image-container"></div> -->
+
+      <button  onclick="location.href= '#input'">Get Started</button>
+    </div>
+
+    <!-- Input and output box section -->
+    <div class="box-container" id = "box">
+     
+      <div class="box input-box" id="input">
+        <h2>Input</h2>
+        <form method="GET" action="/process_string?input_string={{ input_string }}">
+          <textarea name="input_string">{{ input_string }}</textarea>
+               <input type= 'submit' value="submit" id="submit" >
+        </form>
+      </div>
+      
+      <div class="box output-box" id="output">
+        <h2>Output</h2>
+        <div id="result">
+          {% if result %}
+            {{ result }}
+          {% else %}
+            Enter some text in the input section to summarize.
+          {% endif %}
+        </div>
+      </div>
+
+
+
+
+ <!-- ADD CHATBOT SOON! -->
+
+
+        
+    <script src="/tutorial1/static/script.js"></script>
+  </body>
+</html>
+

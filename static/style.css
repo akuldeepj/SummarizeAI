@@ -1,0 +1,266 @@
+body {
+  background-color: #fff;
+  color: #222;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  
+}
+
+.container {
+  background-color: #211f1f;
+  color: #fff;
+  padding: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  font-size: 48px;
+}
+
+h2 {
+  position: absolute;
+  left: 100px;
+  top: 280px;
+  font-size: 42px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: rgb(147, 112, 219);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Roboto Mono', monospace;
+}
+
+button:hover {
+  background-color: #7c51bd;
+}
+
+@media screen and (min-width: 768px) {
+  form {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    ;
+  }
+}
+#back{
+  position: absolute;
+  bottom: 300px;
+  left: 100px;
+  width: 200px;
+  height: 50px;
+  font-size: 1rem;
+}
+  /* }
+#contact{
+     position: absolute;
+    top: 100px;
+    font-size: 65px; 
+} */
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Roboto Mono', monospace;
+  float: right;
+  margin-top: 270px;
+
+
+}
+
+.card {
+  background-color: #fff;
+  color: #222;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  width: 45%;
+
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.contact-card {
+  background-color: rgb(147, 112, 219);
+  color: #fff;
+  height: 170px;
+  cursor: pointer;
+  font-size: 24px;
+  width: 300px;
+  margin-left: 00px;
+
+}
+
+.text-card {
+  background-color: 
+  rgb(255,160,122);
+  color: #333;
+  text-decoration: none;
+  height: 170px;
+  cursor: pointer;
+  margin-left: 40px;
+  /* margin-right: 200px; */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.overlay h2 {
+  color: #fff;
+}
+
+form {
+  background-color: #fff;
+  color: transparent;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20% auto;
+  width: 50%;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.overlay-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #333;
+}
+
+
+#thankyou{
+  position: absolute;
+  top: 800px;
+  left: 1200px;
+  font-size: 32px;
+  font-family: monospace;
+}
+
+#suggest{
+  
+}
