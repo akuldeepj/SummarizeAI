@@ -14,8 +14,8 @@
 
     <nav>
       <ul>
-        <li><a href="#"><img src="../static/image.png" width="70px"></a></li>
-        <li><a href="#input">Summarizer</a></li>
+        <li><a href="index.html"><img src="../static/image.png" width="70px"></a></li>
+        <li><a href="./input.html#input">Summarizer</a></li>
         <!-- <li><a href="#">Services</a></li> -->
         <li><a href="{{ url_for('contact') }}">Contact</a></li>
         <!-- <li><a href="contact.html ">Contact</a></li> -->
@@ -32,32 +32,8 @@
       <p>Get the gist of any text in seconds with powerful summarization tool</p> 
       <!-- <div class="image-container"></div> -->
 
-      <button  onclick="location.href= '#input'">Get Started</button>
+      <button  onclick="location.href= './input.html'">Get Started</button>
     </div>
-
-    <!-- Input and output box section -->
-    <div class="box-container" id = "box">
-     
-      <div class="box input-box" id="input">
-        <h2>Input</h2>
-        <form method="GET" action="/process_string?input_string={{ input_string }}">
-          <textarea name="input_string">{{ input_string }}</textarea>
-               <input type= 'submit' value="submit" id="submit" >
-        </form>
-      </div>
-      
-      <div class="box output-box" id="output">
-        <h2>Output</h2>
-        <div id="result">
-          {% if result %}
-            {{ result }}
-          {% else %}
-            Enter some text in the input section to summarize.
-          {% endif %}
-        </div>
-      </div>
-
-
 
 
  <!-- ADD CHATBOT SOON! -->
