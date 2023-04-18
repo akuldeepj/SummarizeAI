@@ -37,7 +37,7 @@ body {
     margin-bottom: 2rem;
     /* font-family: 'Roboto Mono', monospace; */
     } 
-  button {
+  /* button {
     font-size: 2rem;
     background-color: rgb(147,112,219);
     color: #fff;
@@ -52,7 +52,7 @@ body {
     color: #fff;
     background-color: rgb(147, 112, 219,0.5);
     
-  }
+  } */
   
   
 body {
@@ -120,7 +120,7 @@ body {
   font-family: inherit;
   padding: 0.35em;
   padding-left: 1.2em;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
   border-radius: 0.9em;
   border: none;
@@ -152,11 +152,12 @@ body {
 }
 
 .cssbuttons-io-button:hover .icon {
-  width: calc(100% - 0.6em);
+  width: calc(100% - 0.75em);
 }
 
 .cssbuttons-io-button .icon svg {
-  width: 1.1em;
+  width: 1.5em;
+  
   transition: transform 0.3s;
   color: #7b52b9;
 }

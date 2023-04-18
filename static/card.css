@@ -23,6 +23,7 @@ body{
 .card{
     color: var(--clr-neutral-100);
     background-image:url("yt.png") ;
+    background-position: 50% 50%;
     background-size: cover;
     padding: 10rem 0 0;
     max-width: 50ch;
