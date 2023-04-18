@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/trail.css">
+    
+</head>
+<body>
+    <div class="form__group field" id="input">
+        <input type="input" class="form__field" placeholder="Name" required="">
+        <label for="name" class="form__label">Name</label>
+    </div>
+    <a class="fancy" href="#">
+        <span class="top-key"></span>
+        <span class="text">Buy Tickets</span>
+        <span class="bottom-key-1"></span>
+        <span class="bottom-key-2"></span>
+      </a>
+      <div class="container">
+        <div class="card">
+            <a class="singup">Sign Up</a>
+            <div class="inputBox1">
+                <input type="text" required="required">
+                <span class="user">Email</span>
+            </div>
+
+            <div class="inputBox">
+                <input type="text" required="required">
+                <span>Username</span>
+            </div>
+
+            <div class="inputBox">
+                <input type="password" required="required">
+                <span>Password</span>
+            </div>
+
+            <button class="enter">Enter</button>
+
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img class="title" src="../tree-736885__480.jpg"></img>
+                <p></p>
+            </div>
+            <div class="flip-card-back">
+                <p class="title">BACK</p>
+                <p>Leave Me</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-front">
+          <img src="../tree-736885__480.jpg" alt="your-image-alt">
+        </div>
+        <div class="card-back">
+          <p>Your text goes here.</p>
+        </div>
+      </div>
+      
+</body>
+<script>
+    const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('card-flipped');
+  });
+});
+// This script is optional, it just adds a random gradient background color to the flipped side on each load
+
+const cardBack = document.querySelector('.card-back');
+const gradient = `linear-gradient(45deg, #${Math.floor(Math.random()*16777215).toString(16)}, #${Math.floor(Math.random()*16777215).toString(16)}, #${Math.floor(Math.random()*16777215).toString(16)}, #${Math.floor(Math.random()*16777215).toString(16)})`;
+
+cardBack.style.background = gradient;
+
+</script>
+</html>

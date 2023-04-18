@@ -3,5 +3,7 @@ numpy
 tensorflow_hub
 tensorflow_text
 flask
+tensorflow
+pandas
 scikit-learn
 gunicorn

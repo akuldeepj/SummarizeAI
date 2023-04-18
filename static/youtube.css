@@ -1,0 +1,163 @@
+
+
+.youtube-child {
+  border-radius: 1vw;
+  background-color: var(--color-gainsboro);
+   position: relative;
+   top: 20vw;
+   left: 15vw;
+    width: 40vw;
+    height: 3vw;
+    font-size: 1.5vw;
+
+}
+.paste-the-youtube {
+
+    font-size: 2vw;
+    margin: 0.1vw;
+ 
+
+}
+.paste-the-youtube-container {
+  position: relative;
+  top: 14vw;
+  /* font-size: var(--font-size-13xl); */
+  font-weight: 700;
+  display: inline-block;
+  left: -19vw;
+
+}
+
+.youtube {
+  position: relative;
+  background-color: var(--color-darkslategray);
+  width: 100%;
+  height: 982px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+
+body{
+    height: auto;
+    width: auto;
+}
+
+
+
+.cta {
+    display: flex;
+    padding: 1vw 2vw;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: white;
+    background: rgb(160, 126, 228);
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+    border: none;
+    position: relative;
+    top: 17vw;
+    left: 73vw;
+  }
+  
+  .cta:focus {
+    outline: none;
+  }
+  
+  .cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 rgb(255,160,122);
+  }
+  
+  .cta .second {
+    transition: 0.5s;
+    margin-right: 0px;
+  }
+  
+  .cta:hover  .second {
+    transition: 0.5s;
+    margin-right: 45px;
+  }
+  
+  .span {
+    transform: skewX(15deg)
+  }
+  
+  .second {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+  
+  .one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+  }
+  
+  .two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+  }
+  
+  .cta:hover .three {
+    animation: color_anim 1s infinite 0.2s;
+  }
+  
+  .cta:hover .one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+  }
+  
+  .cta:hover .two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+  }
+  
+  @keyframes color_anim {
+    0% {
+      fill: white;
+    }
+  
+    50% {
+      fill: rgb(255,160,122);
+    }
+  
+    100% {
+      fill: white;
+    }
+  }
+
+  @media (max-width: 767px) {
+ 
+    .paste-the-youtube{
+        font-size: 5vw;
+    }
+    .paste-the-youtube-container{
+        position: relative;
+        top:60vw;
+        left: 1vw;
+    }
+
+    .youtube-child{
+        position: relative;
+        top: 85vw;
+        left: 0vw;
+        width: 75vw;
+        height: 6vw;
+        font-size: 3.5vw;
+    }
+
+    .cta{
+        position: relative;
+        top: 75vw;
+        left: 35vw;
+        height: 10vw;
+    }
+
+
+  }

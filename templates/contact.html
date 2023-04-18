@@ -6,45 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <title>Contact Us</title>
-    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    
   </head>
   <body>
     
     <div class="container">
+      <div class="info">
       <h1 id="contact">Let's Build Something </h1>
-      <h2 id="sub">Great Together</h2>
-
-      <button type="button" id="back" onclick="location.href='{{ url_for('index') }}'">Return to Home</button>
-      <!-- <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-        
-
-        <button type="submit">Send</button> 
+      <h2 id="sub" >Great Together</h2>
+      </div>
 
 
-      </form>-->
-
-      <div class="card-container">
-        <div class="card contact-card">
-          <p id="con">Contact:</p>
-          <p id="con">✉️akuldeepj@gmail.com</p>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title"  style="font-size:3vw;">Contact Me</p>
+                    <p  style="font-size:1vw;">get in touch</p>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title"  style="font-size:1.5vw;">📨akuldeepj@gmail.com</p>
+                    <a style="font-size:2vw;font-weight: 300;" href="mailto:akuldeepj@gmail.com">CLICK HERE</a>
+                </div>
+            </div>
         </div>
-        <a class="card text-card" href="{{ url_for('suggestions') }}">
-          <p>Drop A SUGGESTION HERE !!!<br>
-                      OR
-            <br>
-            Report A BUG
-          </p>
+        <div class="flip-card-2">
+          <div class="flip-card-inner-2">
+              <div class="flip-card-front-2">
+                  <p class="title-2"  style="font-size:3vw;">Drop A Suggestion</p>
+                  <p  class = "title-2"style="font-size:2vw;">or<br>
+                     Report a bug 🪲</p>
+              </div>
+              <div class="flip-card-back-2">
+                  <p class="title-2"  style="font-size:3vw;"></p>
+                  <a style="font-size:2vw;" href="suggestions.html">You experienced any problem in the website?<br> OR <br> Want to share experience <br> CLICK HERE 😊</a>
+              </div>
+          </div>
+      </div>
+
 
         </a>
           </div>
@@ -52,5 +54,37 @@
       </div>
       
     </div>
+
+    <button class="back_to_home" id="index">Back to Home
+      <div class="star-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+      </div>
+      <div class="star-2">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+      </div>
+      <div class="star-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+      </div>
+      <div class="star-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+      </div>
+      <div class="star-5">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+      </div>
+      <div class="star-6">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+      </div>
+    </button>
+
   </body>
+
+  <script>
+         var index = document.getElementById("index");
+      if (index) {
+        index.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+  </script>
+
 </html>

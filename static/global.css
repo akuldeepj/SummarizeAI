@@ -26,4 +26,20 @@ body {
     --br-36xl: 55px;
     --br-26xl: 45px;
   }
+    
+  ::-webkit-scrollbar{
+    width: 0.7em;
+  }
   
+  ::-webkit-scrollbar-track{
+    background: transparent;
+  
+  }
+  ::-webkit-scrollbar-thumb{
+    background:#b9b3b3 ;
+    border-radius: 100vw;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+    background:#fff ;
+  }
