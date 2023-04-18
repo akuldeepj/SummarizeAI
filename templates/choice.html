@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../static/global.css" />
+    <link rel="stylesheet" href="../static/choice.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    />
+  </head>
+  <body>
+    <div class="choice">
+      <a class="nav3"
+        ><div class="navbar2"></div>
+        <div class="logo2"></div>
+        <div class="home3" id="hOMEText">HOME</div>
+        <div class="contact4" id="cONTACTText">CONTACT</div>
+        <div class="about3">ABOUT</div></a>
+        <img
+        class="card-icon"
+        src="../static/unnamed.webp"
+        alt=""
+        
+        id="cardImage"
+      /><img
+        class="choice-child"
+        alt=""
+        src="../static/yt.png"
+        id="rectangleImage"
+      />
+    </div>
+
+    <script>
+      var hOMEText = document.getElementById("hOMEText");
+      if (hOMEText) {
+        hOMEText.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var cONTACTText = document.getElementById("cONTACTText");
+      if (cONTACTText) {
+        cONTACTText.addEventListener("click", function (e) {
+          window.location.href = "./contact.html";
+        });
+      }
+      
+      var cardImage = document.getElementById("cardImage");
+      if (cardImage) {
+        cardImage.addEventListener("click", function (e) {
+          window.location.href = "./text.html";
+        });
+      }
+      
+      var rectangleImage = document.getElementById("rectangleImage");
+      if (rectangleImage) {
+        rectangleImage.addEventListener("click", function (e) {
+          window.location.href = "./youtube.html";
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

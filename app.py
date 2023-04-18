@@ -16,7 +16,6 @@ def process_string():
     return render_template('index.html', result=output_string, input_string=input_string)
 
 
-
 @app.route('/contact')
 def contact():
     return render_template('contact.html')

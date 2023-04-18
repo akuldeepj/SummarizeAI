@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../static/global.css" />
+    <link rel="stylesheet" href="../static/yt-out.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    />
+  </head>
+  <body>
+    <div class="yt-out">
+      <div class="nav4">
+        <div class="navbar3" data-scroll-to="navbar"></div>
+        <div class="logo3"></div>
+        <div class="home4" id="hOMEText">HOME</div>
+        <div class="contact5" id="cONTACTText">CONTACT</div>
+        <div class="about4">ABOUT</div>
+      </div>
+      <input class="yt-out-child" type="text" /><button
+        class="next-button"
+        id="nextButton"
+      >
+        <img
+          class="next-button-child"
+          alt=""
+          src="../static/pngwing.com.png"
+        /><img
+          class="pngwing-1-icon"
+          
+        /></button
+      ><textarea class="yt-out-item"></textarea>
+      <div class="output">OUTPUT!!</div>
+    </div>
+
+    <script>
+      var hOMEText = document.getElementById("hOMEText");
+      if (hOMEText) {
+        hOMEText.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var cONTACTText = document.getElementById("cONTACTText");
+      if (cONTACTText) {
+        cONTACTText.addEventListener("click", function (e) {
+          window.location.href = "./contact.html";
+        });
+      }
+      
+      var nextButton = document.getElementById("nextButton");
+      if (nextButton) {
+        nextButton.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='navbar']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      </script>
+  </body>
+</html>
