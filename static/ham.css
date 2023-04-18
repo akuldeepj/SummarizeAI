@@ -1,0 +1,52 @@
+.logo2,
+.navbar2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-mediumpurple);
+  width: 1512px;
+  height: 81px;
+}
+.logo2 {
+  top: 4.38px;
+  left: 10.5px;
+  background-color: var(--color-gainsboro);
+  width: 117.6px;
+  height: 72.24px;
+}
+.contact4,
+.home3 {
+  top: 27px;
+  display: inline-block;
+  height: 16.05px;
+  cursor: pointer;
+}
+.home3 {
+  position: absolute;
+  left: 140.7px;
+  width: 87.15px;
+}
+.contact4 {
+  left: 338.1px;
+  width: 117.6px;
+}
+.about3,
+.contact4,
+.nav3 {
+  position: absolute;
+}
+.about3 {
+  top: 27px;
+  left: 227.85px;
+  display: inline-block;
+  width: 87.15px;
+  height: 16.05px;
+}
+.nav3 {
+  text-decoration: none;
+  top: 0;
+  left: 0;
+  width: 1512px;
+  height: 81px;
+  color: inherit;
+}
