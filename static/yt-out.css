@@ -1,107 +1,148 @@
-.logo3,
-.navbar3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--color-mediumpurple);
-  width: 1512px;
-  height: 81px;
-}
-.logo3 {
-  top: 4.38px;
-  left: 10.5px;
-  background-color: var(--color-gainsboro);
-  width: 117.6px;
-  height: 72.24px;
-}
-.home4 {
-  left: 140.7px;
-  width: 87.15px;
-  cursor: pointer;
-}
-.about4,
-.contact5,
-.home4 {
-  position: absolute;
-  top: 27px;
-  display: inline-block;
-  height: 16.05px;
-}
-.contact5 {
-  left: 338.1px;
-  width: 117.6px;
-  cursor: pointer;
-}
-.about4 {
-  left: 227.85px;
-  width: 87.15px;
-}
-.nav4,
-.yt-out-child {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1512px;
-  height: 81px;
-}
-.yt-out-child {
-  border: 0;
-  background-color: var(--color-gainsboro);
-  top: 111px;
-  left: 23px;
-  width: 1089px;
-  height: 56px;
-}
-.next-button-child,
-.pngwing-1-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 68px;
-  height: 80px;
-}
-.pngwing-1-icon {
-  top: 9.32px;
-  left: 7.92px;
-  width: 52.82px;
-  height: 62.14px;
-  object-fit: cover;
-}
-.next-button {
-  cursor: pointer;
-  border: 0;
+body {
+  margin: 0;
   padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 99px;
-  left: 1138px;
-  width: 68px;
-  height: 80px;
-}
-.yt-out-item {
-  border: 0;
-  background-color: rgba(30, 30, 30, 0.62);
-  position: absolute;
-  top: 197px;
-  left: 45px;
-  width: 1319px;
-  height: 748px;
-}
-.output {
-  position: absolute;
-  top: 266px;
-  left: 116px;
-  font-size: var(--font-size-13xl);
-  font-weight: 600;
-}
-.yt-out {
+  font-family: sans-serif;
+  color: #fff;
+  background-color: #222;
+  
+}.output-box {
+  width: 60%;
+  padding: 2rem;
+  background-color:rgb(255,160,122);
+  color:  #000;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   position: relative;
-  background-color: var(--color-darkslategray);
-  width: 100%;
-  height: 982px;
-  overflow: hidden;
-  text-align: center;
-  font-size: var(--font-size-lg);
-  color: var(--color-white);
-  font-family: var(--font-inter);
+  top: 5rem;
+  left: 23rem;
+  max-height: 70rem;
+
+}  
+
+.output-box h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
 }
+
+::-webkit-scrollbar{
+width: 0.7em;
+}
+
+::-webkit-scrollbar-track{
+background: transparent;
+
+}
+::-webkit-scrollbar-thumb{
+background:#b9b3b3 ;
+border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background:#fff ;
+}
+
+
+#result {
+  /* font-family: Arial, sans-serif; */
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  max-height: 50rem; /* Set the maximum height of the output box */
+  overflow-y: auto;
+}
+
+
+.youtube-child {
+  border-radius: 1vw;
+  background-color: var(--color-gainsboro);
+   position: relative;
+   top: 4rem;
+   left: 30rem;
+    width: 50rem;
+    height: 3vw;
+    font-size: 1.5vw;
+
+}
+
+
+
+body{
+    height: auto;
+    width: auto;
+}
+
+
+
+.cta {
+    display: flex;
+    padding: 1vw 2vw;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: white;
+    background: rgb(160, 126, 228);
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+    border: none;
+    position: relative;
+    top: 0.5rem;
+    left: 82rem;
+  }
+  
+  .cta:focus {
+    outline: none;
+  }
+  
+  .cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 rgb(255,160,122);
+  }
+  
+  .cta .second {
+    transition: 0.5s;
+    margin-right: 0px;
+  }
+  
+  .cta:hover  .second {
+    transition: 0.5s;
+    margin-right: 45px;
+  }
+  
+  .span {
+    transform: skewX(15deg)
+  }
+  
+  .second {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+  
+  .one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+  }
+  
+  .two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+  }
+  
+  .cta:hover .three {
+    animation: color_anim 1s infinite 0.2s;
+  }
+  
+  .cta:hover .one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+  }
+  
+  .cta:hover .two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+  }
+
