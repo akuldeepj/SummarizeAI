@@ -151,3 +151,25 @@ body{
     overflow-x: hidden;
 }
 
+@media screen and (max-width: 600px) {
+
+  #intro{
+    font-size: 2rem;
+    margin-top: 1%;
+    position: relative;
+    left: 5rem;
+    width: fit-content;
+  }
+  .input-box{
+    width: 70%;
+    position: relative;
+    top: -2rem;
+  }
+  .output-box{
+    width: 70%;
+    position: relative;
+    top: -2rem;
+
+  }
+
+  }
