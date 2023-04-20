@@ -326,14 +326,3 @@ body{
   left: 1px;
 }
 }
-
-
-@media screen and (max-width: 787px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-
-  }
-
-}

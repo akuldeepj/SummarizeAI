@@ -146,3 +146,30 @@ body{
     animation: color_anim 1s infinite 0.4s;
   }
 
+
+  @media screen and (max-width: 787px) {
+ 
+    .output-box{
+      position: relative;
+      left: 1rem;
+      top: 8rem;
+      width: 20rem;
+      height: 35rem;
+    }
+    .youtube-child{
+      position: relative;
+      left: 2rem;
+      width: 20rem;
+      font-size: large;
+      height: fit-content;
+
+    }
+    .cta{
+      position: relative;
+      left: 9rem;
+      top: 5rem;
+    }
+
+
+  }
+  
