@@ -66,7 +66,7 @@
 
 
 
-#DECENT PERFORMANCE
+# DECENT PERFORMANCE
 
 import nltk
 from nltk.tokenize import sent_tokenize
@@ -75,6 +75,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import tensorflow_hub as hub
 import tensorflow_text
+from grammar import grammify
+
 
 # Load pre-trained word embedding model
 embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder-multilingual-large/3")
