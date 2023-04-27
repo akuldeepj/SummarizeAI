@@ -168,8 +168,19 @@ body{
   .output-box{
     width: 70%;
     position: relative;
-    top: -2rem;
+    /* top: -2rem; */
 
+  }
+  
+  #submit{
+    position: absolute;
+    top: 37em;
+    margin-bottom: 12px;
+  }
+
+
+  .input-box textarea{
+    height: 22em;
   }
 
   }
