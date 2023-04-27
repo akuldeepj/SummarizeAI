@@ -202,8 +202,8 @@ body {
   }
 
   .cssbuttons-io-button{
-    position: relative;
-    bottom: 120vw;
+    position: absolute;
+    top: 33em;
     left: 25vw;
     width: auto;
     height: 15vw;
