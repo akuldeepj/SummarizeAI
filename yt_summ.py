@@ -3,7 +3,7 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from summary import generate_summary
 from grammar import grammify
 
-link = input("LINK = ")
+link = 'https://www.youtube.com/watch?v=GDSf2h9_39I'
 video_id = link.split('=')[1]
 print(video_id)
 # Get the transcript

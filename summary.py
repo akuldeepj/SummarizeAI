@@ -139,8 +139,3 @@ def generate_summary(text, num_sentences=9):
 
 
 
-
-
-
-
-
