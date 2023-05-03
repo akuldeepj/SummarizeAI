@@ -129,6 +129,7 @@ def generate_summary(text, num_sentences=9):
         sentence_scores = (1 - damping_factor) + damping_factor * np.dot(similarity_matrix, sentence_scores)
     
     # Sort the sentences by their score and get the top N sentences
+    #test
     ranked_sentences = sorted(((sentence_scores[i], s) for i, s in enumerate(sentences)), reverse=True)
     summary_sentences = [s for score, s in ranked_sentences[:num_sentences]]
     
