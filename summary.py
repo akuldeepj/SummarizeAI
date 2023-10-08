@@ -114,7 +114,9 @@ def build_similarity_matrix(sentences):
     
     return similarity_matrix
 
-def generate_summary(text, num_sentences=9):
+# Function to correct grammar errors in a given paragraph
+
+def generate_summary(text):
     # Clean the text and tokenize it into sentences
     sentences = read_article(text)
     
@@ -128,7 +130,7 @@ def generate_summary(text, num_sentences=9):
     
     # Sort the sentences by their score and get the top N sentences
     ranked_sentences = sorted(((sentence_scores[i], s) for i, s in enumerate(sentences)), reverse=True)
-    summary_sentences = [s for score, s in ranked_sentences[:num_sentences]]
+    summary_sentences = [s for score, s in ranked_sentences]
     
     # Combine the top N sentences into a summary
     summary = ' '.join(summary_sentences)
