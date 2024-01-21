@@ -57,37 +57,7 @@ def build_similarity_matrix(sentences):
     return similarity_matrix
 
 
-# def generate_summary(text, num_sentences=15, min_length=10, max_length=1000  , keywords=None):
-#     # Clean the text and tokenize it into sentences
-#     sentences = read_article(text, min_length=min_length, max_length=max_length, keywords=keywords)
 
-#     # Filter out short and long sentences
-#     sentences = [sent for sent in sentences if len(sent) >= min_length and len(sent) <= max_length]
-
-#     # Build the similarity matrix and apply PageRank to get sentence scores
-#     similarity_matrix = build_similarity_matrix(sentences)
-#     sentence_scores = np.sum(similarity_matrix, axis=1)
-#     sentence_scores = sentence_scores / np.max(sentence_scores) # Normalize scores
-#     damping_factor = 0.85
-#     for _ in range(10): # Run PageRank for 10 iterations
-#         sentence_scores = (1 - damping_factor) + damping_factor * np.dot(similarity_matrix, sentence_scores)
-
-#     # Sort the sentences by their score and get the top N sentences
-#     ranked_sentences = sorted(((sentence_scores[i], s) for i, s in enumerate(sentences)), reverse=True)
-#     top_sentences = ranked_sentences[:num_sentences]
-
-#     # Include the top sentences that cover at least 25% of the text
-#     summary_sentences = []
-#     summary_length = 0
-#     for score, sentence in top_sentences:
-#         if summary_length < 0.5 * len(text.split()):
-#             summary_sentences.append(sentence)
-#             summary_length += len(sentence.split())
-
-#     # Join the summary sentences into a single summary paragraph
-#     summary = ' '.join(summary_sentences)
-
-#     return summary
 
 
 def generate_summary(text, num_sentences=15, min_length=10, max_length=100, max_summary_length=None, keywords=None):
